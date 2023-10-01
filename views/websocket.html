@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTMX WebSocket Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.6.0/dist/htmx.js"></script>
+</head>
+<body>
+  <div hx-get="/api/socket" hx-swap="outerHTML">
+    <button hx-trigger="click" hx-get="/api/socket">Get WebSocket data</button>
+    <div id="socket-response"></div>
+  </div>
+</body>
+</html>

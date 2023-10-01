@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTMX REST API Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.6.0/dist/htmx.js"></script>
+</head>
+<body>
+  <button hx-get="/api/data" hx-target="#api-response">Get API data</button>
+  <div id="api-response"></div>
+</body>
+</html>
